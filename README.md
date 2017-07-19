@@ -6,9 +6,9 @@ This project is based on the [Kentico Cloud Xamarin Demo project](https://github
 
 In order to run this project, you will need to complete the following:
 
- 1. Create the following Kentico Cloud content types / items. The referenced files Detail all the fields required. 
-- Blog post (/src/Common/Models/BlogPost.cs)
-- Author (/src/Common/Models/Author.cs)
+ 1. Create the following Kentico Cloud content types / items. The referenced files detail all the fields required. 
+- Blog post ([/src/Common/Models/BlogPost.cs](/src/Common/Models/BlogPost.cs))
+- Author ([/src/Common/Models/Author.cs](/src/Common/Models/Author.cs))
 
 2. Update the KenticoCloudProjectID value in Services/KenticoCloudeSerice.cs
 
