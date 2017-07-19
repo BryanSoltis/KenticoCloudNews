@@ -12,20 +12,9 @@ namespace Common.Models
         public const string PerexCodename = "perex";
         public const string DateCodename = "date";
         public const string AuthorCodename = "author";
-        public const string BodyCodename = "body";
         public const string HeaderImageCodename = "header_image";
-        public const string HeaderImage2xCodename = "header_image_2x";
-        public const string HeaderImageTextCodename = "header_image_text";
         public const string TopicCodename = "topic";
-        public const string AttachmentsCodename = "attachments";
-        public const string MetadataTitleCodename = "metadata___title";
-        public const string MetadataDescriptionCodename = "metadata___description";
         public const string UrlSlugCodename = "url_slug";
-        public const string CanonicalLinksCodename = "canonical_links";
-        public const string ImageBehaviorCodename = "image_behavior";
-        public const string ModularBodyCodename = "modular_body";
-        public const string YoutubeVideoIdCodename = "youtube_video_id";
-        public const string SlideshareKeyCodename = "slideshare_key";
 
         public string Title { get; set; }
         public DateTime? Date { get; set; }
