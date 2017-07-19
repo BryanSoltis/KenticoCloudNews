@@ -14,11 +14,17 @@ In order to run this project, you will need to complete the following:
 
 # Screenshots
 ## Android
+### Home
 [<img src="/img/AndroidHome.png" alt="Android sample app (Home)" />](/img/AndroidHome.png)
+### Detail
 [<img src="/img/AndroidDetail.png" alt="Android sample app (Detail)" />](/img/AndroidDetail.png)
 ## Windows 10 Mobile
+### Home
 [<img src="/img/Windows10MobileHome.png" alt="Windows 10 Mobile sample app (Home)" />](/img/Windows10MobileHome.png)
+### Detail
 [<img src="/img/Windows10MobileDetail.png" alt="Windows 10 Mobile sample app (Detail)" />](/img/Windows10MobileDetail.png)
 ## UWP
+### Home
 [<img src="/img/UWPHome.png" alt="UWP sample app (Home)" />](/img/UWPHome.png)
+### Detail
 [<img src="/img/UWPDetail.png" alt="AUWP sample app (Detail)" />](/img/UWPDetail.png)
