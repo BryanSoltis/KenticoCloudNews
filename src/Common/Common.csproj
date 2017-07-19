@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageTargetFallback>portable-net45+win8+wpa81+wp8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Article.cs" />
+    <Compile Remove="ArticlePartial.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="MainPage.xaml" />
+    <None Remove="Views\BlogPostDetailPage.xaml" />
+    <None Remove="Views\BlogPostsPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BlogPostDetailPage.xaml" />
+    <EmbeddedResource Include="Views\BlogPostsPage.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KenticoCloud.Delivery" Version="4.6.0" />
+    <PackageReference Include="Xamarin.Forms" Version="2.3.4.247" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

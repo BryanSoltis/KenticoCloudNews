@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinDelivery"
+             x:Class="XamarinDelivery.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorAppBackground">#0071b8</Color>
+            <Color x:Key="colorTitleBackground">#29B7BD</Color>
+            <Color x:Key="colorPrimary">#DBF9EC</Color>
+            <Color x:Key="colorOverlayColor">#CC808080</Color>
+            <Color x:Key="colorHighlightColor">#f05a22</Color>
+            <Color x:Key="colorPrimaryTextColor">#FFFFFF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid  BackgroundColor="{StaticResource colorAppBackground}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Padding="20" Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Orientation="Horizontal" Grid.Row="0">
+                <Image VerticalOptions="Center">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <OnPlatform.iOS>
+                                <FileImageSource File="resources/headless_horseman50.png"/>
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                <FileImageSource File="resources/drawable/headless_horseman50.png"/>
+                            </OnPlatform.Android>
+                            <OnPlatform.WinPhone>
+                                <FileImageSource File="assets/headless_horseman50.png"/>
+                            </OnPlatform.WinPhone>
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>
+                <Label Text="Kentico Cloud News" FontSize="Large" FontAttributes="Bold" TextColor="{StaticResource colorPrimaryTextColor}" VerticalOptions="Center"></Label>
+            </StackLayout>
+            <Button x:Name="btnRefresh" Grid.Column="1" BorderRadius="10" Clicked="RefreshButton_Clicked" BackgroundColor="{StaticResource colorHighlightColor}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                    iOS="resources/refresh25.png"
+                    WinPhone="assets/refresh25.png"
+                    Android="resources/drawable/refresh25.png" />
+                </Button.Image>
+            </Button>
+        </Grid>
+        <ListView x:Name="LVBlogPosts" Grid.Row="1" HasUnevenRows="True" ItemSelected="OnSelection">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid BackgroundColor="White">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="8*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding ImageUrl}" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Grid.Row="1" Grid.ColumnSpan="3" />
+                            <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource colorAppBackground}" Padding="20" Opacity=".75">
+                                <Label Text="{Binding Date,StringFormat='{0:MMMM dd, yyyy}'}" TextColor="{StaticResource colorPrimaryTextColor}" FontSize="Small" Opacity="1"/>
+                                <Label Text="{Binding Title}" TextColor="{StaticResource colorPrimaryTextColor}" FontSize="Medium" Opacity="1"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="by "  TextColor="{StaticResource colorPrimaryTextColor}"></Label>
+                                    <Label Text="{Binding AuthorName}"  TextColor="{StaticResource colorPrimaryTextColor}"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout x:Name="slLoading" BackgroundColor="{StaticResource colorOverlayColor}" Grid.Row="1" IsVisible="False" HorizontalOptions="Fill" VerticalOptions="Fill">
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" HorizontalOptions="Center">
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource">
+                            <OnPlatform.iOS>
+                                <FileImageSource File="resources/headless_horseman.png"/>
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                <FileImageSource File="resources/drawable/headless_horseman.png"/>
+                            </OnPlatform.Android>
+                            <OnPlatform.WinPhone>
+                                <FileImageSource File="assets/headless_horseman.png"/>
+                            </OnPlatform.WinPhone>
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>
+                <Label Grid.Row="1" Text="Refreshing..." TextColor="{StaticResource colorPrimaryTextColor}" FontSize="Large" FontAttributes="Italic"  HorizontalOptions="Center"></Label>
+            </Grid>
+        </StackLayout>
+        <StackLayout x:Name="slMessage" BackgroundColor="{StaticResource colorHighlightColor}" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1" Padding="50" IsVisible="False">
+            <Label x:Name="lblMessage" TextColor="{StaticResource colorPrimaryTextColor}" Text="Sample message" FontAttributes="Italic"></Label>
+            <Button x:Name="btnMessage" Text="OK" BackgroundColor="{StaticResource colorPrimaryTextColor}" TextColor="{StaticResource colorHighlightColor}" Clicked="MessageButton_Clicked" Margin="0,20,0,0"></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>

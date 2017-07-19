@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KenticoCloudNews.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorPrimaryAppBackground">#0071b8</Color>
+            <Color x:Key="colorSecondaryAppBackground">#FFFFFF</Color>
+            <Color x:Key="colorTitleBackground">#29B7BD</Color>
+            <Color x:Key="colorPrimary">#DBF9EC</Color>
+            <Color x:Key="colorOverlay">#CC808080</Color>
+            <Color x:Key="colorHighlight">#f05a22</Color>
+            <Color x:Key="colorPrimaryText">#FFFFFF</Color>
+            <Color x:Key="colorSecondaryText">#000000</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource colorPrimaryAppBackground}" />
+                <Setter Property="BarTextColor" Value="{StaticResource colorPrimaryText}" />
+            </Style>
+        </ResourceDictionary>
+	</Application.Resources>
+</Application>
