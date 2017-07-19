@@ -12,6 +12,12 @@ In order to run this project, you will need to complete the following:
 
 2. Update the KenticoCloudProjectID value in Services/KenticoCloudeSerice.cs
 
+#Pre-Requisites
+This project requires the following:
+- Windows 10
+- Visusl Studio 2017
+- Mobile & Gaming / Mobile Developer with .NET (Visual Studio Installer)
+
 # Screenshots
 ## Android
 ### Home
