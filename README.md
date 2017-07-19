@@ -1,10 +1,10 @@
 # Kentico Cloud News Xamarin application
-[<img src="/img/androidhome.png" alt="Android sample app (Home)" />](/img/androidhome.png)
-[<img src="/img/androiddetail.png" alt="Android sample app (Detail)" />](/img/androiddetail.png)
-[<img src="/img/uwphome.png" alt="UWP sample app (Home)" />](/img/uwphome.png)
-[<img src="/img/uwpdetail.png" alt="AUWP sample app (Detail)" />](/img/uwpdetail.png)
-[<img src="/img/windows10mobilehome.png" alt="Windows 10 Mobile sample app (Home)" />](/img/windows10mobilehome.png)
-[<img src="/img/windows10mobiledetail.png" alt="Windows 10 Mobile sample app (Detail)" />](/img/windows10mobiledetail.png)
+[<img src="/img/Androidhome.png" alt="Android sample app (Home)" />](/img/Androidhome.png)
+[<img src="/img/Androiddetail.png" alt="Android sample app (Detail)" />](/img/Androiddetail.png)
+[<img src="/img/UWPhome.png" alt="UWP sample app (Home)" />](/img/UWPhome.png)
+[<img src="/img/UWPdetail.png" alt="AUWP sample app (Detail)" />](/img/UWPdetail.png)
+[<img src="/img/Windows10Mobilehome.png" alt="Windows 10 Mobile sample app (Home)" />](/img/Windows10Mobilehome.png)
+[<img src="/img/Windows10Mobiledetail.png" alt="Windows 10 Mobile sample app (Detail)" />](/img/Windows10Mobiledetail.png)
 
 This project demonstrates how you can use [Kentico Cloud Delivery SDK](https://github.com/Kentico/delivery-sdk-net) (or any other Kentico Cloud SDK for .NET) in a cross-platform Xamarin application.
 
