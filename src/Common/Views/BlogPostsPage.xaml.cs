@@ -17,9 +17,16 @@ namespace Common.Views
 
         public BlogPostsPage()
         {
-            _viewModel = new BlogPostsViewModel(new KenticoCloudService());
             InitializeComponent();
-            RefreshBlogPosts(0);
+            try
+            {
+                _viewModel = new BlogPostsViewModel(new KenticoCloudService());
+                RefreshBlogPosts(0);
+            }
+            catch(Exception ex)
+            {
+                HandleException(ex);
+            }
         }
 
         private bool _isRefreshing = false;

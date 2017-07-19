@@ -11,13 +11,19 @@ namespace Common.Services
 {
    public class KenticoCloudService : IKenticoCloudService
     {
-
         private DeliveryClient client;
-        private static string strKenticoCloudProjectID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // Update to your Kentico Cloud Project ID
+        private static string strKenticoCloudProjectID = "XXXXXXXXXXXXXXXXXXXXXXX"; // Update to your Kentico Cloud Project ID
         public KenticoCloudService()
         {
-            client = new DeliveryClient(strKenticoCloudProjectID);
-            client.InlineContentItemsProcessor.RegisterTypeResolver(new HostedVideoResolver());
+            try
+            {
+                client = new DeliveryClient(strKenticoCloudProjectID);
+                client.InlineContentItemsProcessor.RegisterTypeResolver(new HostedVideoResolver());
+            }
+            catch(Exception)
+            {
+                throw;
+            }
         }
 
         public async Task<List<BlogPost>> GetBlogPosts()
@@ -47,7 +53,6 @@ namespace Common.Services
         public async Task<List<BlogPost>> GetAuthorBlogPosts(string strAuthor)
         {
             List<BlogPost> lstBlogPosts = new List<BlogPost>();
-
             try
             {
                 var response = await client.GetItemsAsync<BlogPost>(
