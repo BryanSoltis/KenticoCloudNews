@@ -10,13 +10,11 @@ This project demonstrates how you can use [Kentico Cloud Delivery SDK](https://g
 
 This project is based on the [Kentico Cloud Xamarin Demo project](https://github.com/Kentico/cloud-sample-app-xamarin).
 
-More information in a [blogpost](https://forums.kenticocloud.com/discussion/64/using-net-delivery-sdk-in-xamarin).
-
 In order to run this project, you will need to complete the following:
 
  1. Create the following Kentico Cloud content types / items. The referenced files detail all the fields required. 
-- Blog post (/Models/BlogPost.cs)
-- Author (/Models/Author.cs)
+- Blog post (/src/Common/Models/BlogPost.cs)
+- Author (/src/Common/Models/Author.cs)
 
 2. Update the KenticoCloudProjectID value in Services/KenticoCloudeSerice.cs
 
