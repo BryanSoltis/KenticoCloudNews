@@ -13,9 +13,12 @@ In order to run this project, you will need to complete the following:
 2. Update the KenticoCloudProjectID value in Services/KenticoCloudeSerice.cs
 
 # Screenshots
+## Android
 [<img src="/img/AndroidHome.png" alt="Android sample app (Home)" />](/img/AndroidHome.png)
 [<img src="/img/AndroidDetail.png" alt="Android sample app (Detail)" />](/img/AndroidDetail.png)
+## Windows 10 Mobile
 [<img src="/img/Windows10MobileHome.png" alt="Windows 10 Mobile sample app (Home)" />](/img/Windows10MobileHome.png)
 [<img src="/img/Windows10MobileDetail.png" alt="Windows 10 Mobile sample app (Detail)" />](/img/Windows10MobileDetail.png)
+## UWP
 [<img src="/img/UWPHome.png" alt="UWP sample app (Home)" />](/img/UWPHome.png)
 [<img src="/img/UWPDetail.png" alt="AUWP sample app (Detail)" />](/img/UWPDetail.png)
