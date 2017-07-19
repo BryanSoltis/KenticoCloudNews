@@ -12,7 +12,7 @@ In order to run this project, you will need to complete the following:
 
 2. Update the KenticoCloudProjectID value in Services/KenticoCloudeSerice.cs
 
-#Pre-Requisites
+# Pre-Requisites
 This project requires the following:
 - Windows 10
 - Visusl Studio 2017
