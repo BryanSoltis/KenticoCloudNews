@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Common.ViewModels
 {
-    class BlogPostsViewModel
+    public class BlogPostsViewModel : BaseViewModel
     {
         public BlogPostsViewModel(IKenticoCloudService kenticocloudService)
         {
