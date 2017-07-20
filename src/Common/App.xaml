@@ -6,7 +6,6 @@
         <ResourceDictionary>
             <Color x:Key="colorPrimaryAppBackground">#0071b8</Color>
             <Color x:Key="colorSecondaryAppBackground">#FFFFFF</Color>
-            <Color x:Key="colorTitleBackground">#29B7BD</Color>
             <Color x:Key="colorPrimary">#DBF9EC</Color>
             <Color x:Key="colorOverlay">#CC808080</Color>
             <Color x:Key="colorHighlight">#f05a22</Color>

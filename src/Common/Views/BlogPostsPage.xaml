@@ -5,7 +5,11 @@
              x:Name="BlogPostsPage"
              Title="Kentico Cloud News">
     <Grid  BackgroundColor="{StaticResource colorSecondaryAppBackground}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
-        <ListView x:Name="lvBlogPosts" HasUnevenRows="True" ItemSelected="OnSelection" IsPullToRefreshEnabled="True"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1" ></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" x:Name="lvBlogPosts" HasUnevenRows="True" ItemSelected="OnSelection" IsPullToRefreshEnabled="True"
            RefreshCommand="{Binding RefreshCommand}"
            IsRefreshing="{Binding IsRefreshing}" >
             <ListView.ItemTemplate>

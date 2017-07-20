@@ -109,7 +109,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="XamarinDelivery.UWP_TemporaryKey.pfx" />
+    <None Include="KenticoCloudNews.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\headless_horseman.png" />
