@@ -12,7 +12,7 @@ namespace Common.Services
    public class KenticoCloudService : IKenticoCloudService
     {
         private DeliveryClient client;
-        private static string strKenticoCloudProjectID = "4e9bdd7a-2db8-4c33-a13a-0c368ec2f108"; // Update to your Kentico Cloud Project ID
+        private static string strKenticoCloudProjectID = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // Update to your Kentico Cloud Project ID
         public KenticoCloudService()
         {
             try
