@@ -17,7 +17,7 @@ namespace Common.Views
 
         public BlogPostsPage()
         {
-            InitializeComponent();
+            InitializeComponent();            
             try
             {
                 _viewModel = new BlogPostsViewModel(new KenticoCloudService());
