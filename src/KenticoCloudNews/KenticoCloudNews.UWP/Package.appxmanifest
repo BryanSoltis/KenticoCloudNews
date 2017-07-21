@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="6182a6dc-6a51-4e4e-b581-cb2489d4643f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>KenticoCloudNews.UWP</DisplayName>
-    <PublisherDisplayName>petrs</PublisherDisplayName>
+    <PublisherDisplayName>kentico</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

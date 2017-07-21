@@ -36,10 +36,4 @@
     </Compile>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="headless_horseman50.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
