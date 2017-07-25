@@ -17,6 +17,7 @@ This project requires the following:
 - Windows 10
 - Visusl Studio 2017
 - Mobile & Gaming / Mobile Developer with .NET (Visual Studio Installer)
+- Mac for iOS compilation / debugging
 
 # Screenshots
 ## Android
@@ -24,6 +25,11 @@ This project requires the following:
 [<img src="/img/AndroidHome.png" alt="Android sample app (Home)" />](/img/AndroidHome.png)
 ### Detail
 [<img src="/img/AndroidDetail.png" alt="Android sample app (Detail)" />](/img/AndroidDetail.png)
+## iOS
+### Home
+[<img src="/img/iOSHome.png" alt="iOS sample app (Home)" />](/img/iOSHome.png)
+### Detail
+[<img src="/img/iOSDetail.png" alt="iOS sample app (Detail)" />](/img/iOSDetail.png)
 ## Windows 10 Mobile
 ### Home
 [<img src="/img/Windows10MobileHome.png" alt="Windows 10 Mobile sample app (Home)" />](/img/Windows10MobileHome.png)
@@ -33,4 +39,4 @@ This project requires the following:
 ### Home
 [<img src="/img/UWPHome.png" alt="UWP sample app (Home)" />](/img/UWPHome.png)
 ### Detail
-[<img src="/img/UWPDetail.png" alt="AUWP sample app (Detail)" />](/img/UWPDetail.png)
+[<img src="/img/UWPDetail.png" alt="UWP sample app (Detail)" />](/img/UWPDetail.png)
