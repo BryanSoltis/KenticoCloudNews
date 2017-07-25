@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace XamarinDelivery.iOS
+namespace KenticoCloudNews.iOS
 {
     public class Application
     {

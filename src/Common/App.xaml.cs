@@ -18,8 +18,10 @@ namespace KenticoCloudNews
 
         public static void SetMainPage()
         {
-            Current.MainPage = new NavigationPage(new BlogPostsPage());
-            Current.MainPage.BackgroundColor = (Color)Current.Resources["colorPrimaryAppBackground"];
+            Current.MainPage = new NavigationPage(new BlogPostsPage())
+            {
+                BackgroundColor = (Color)Current.Resources["colorPrimaryAppBackground"]
+            };
         }
 
         protected override void OnStart()
